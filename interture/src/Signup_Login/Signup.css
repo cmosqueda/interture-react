@@ -1,0 +1,139 @@
+:root {
+  /* colors lightmode */
+  --greenolive: #546a5e;
+  --whiteblaster: #e0e0d4;
+  --offwhite: #ccc5b2;
+  --lightgreen: #9b9589;
+  --onyxgray: #414141;
+
+  /* colors darkmode */
+  --d-white: #e7e7e7;
+  --d-dark: #272727;
+  --d-green: #394f43;
+}
+
+.signup-container {
+  margin: 5% auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 15%; */
+}
+
+.signup-form-container {
+  margin: 10%;
+}
+
+.signup-text-container {
+  text-align: start;
+  /* line-height: 60px; */
+}
+
+.signup-text-container p {
+  margin: 10px;
+  font-size: small;
+}
+
+.signup-card {
+  margin: 10%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: var(--offwhite);
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.315);
+}
+
+.signup-form {
+  margin: 20px 0;
+}
+
+.form-group-signup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /*kani ang nadugang*/
+}
+
+.form-group-signup input {
+  font-size: small;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
+  width: 100%;
+}
+
+.form-group-signup button {
+  width: 45%;
+}
+
+.signup-image {
+  display: none;
+}
+
+.login-option {
+  text-align: center;
+  font-size: small;
+}
+
+.login-text {
+  font-weight: bold;
+  color: var(--onyxgray);
+}
+
+.login-text:hover {
+  color: var(--d-white);
+}
+
+@media (min-width: 768px) {
+  .signup-container {
+    margin: 50px 0;
+  }
+  .signup-form-container {
+    margin: 5%;
+  }
+  .signup-card {
+    flex-direction: row;
+    margin: 0 4%;
+    width: 70%;
+    /* height: 70%; */
+    justify-content: space-between;
+  }
+  .form-group-signup {
+    flex-wrap: nowrap;
+  }
+  .form-group-signup input {
+    padding: 8px;
+  }
+  .signup-image-container {
+    width: 50%;
+    height: 50%;
+  }
+  .signup-image {
+    display: flex;
+    /* width: 400px; */
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .signup-card {
+    background-color: var(--onyxgray);
+  }
+  .form-group-signup input {
+    background-color: var(--d-dark);
+    /* color: black; */
+  }
+  .signup-button {
+    background-color: var(--lightgreen);
+  }
+  .signup-text-container,
+  .login-option,
+  .login-text {
+    color: var(--whiteblaster);
+  }
+}

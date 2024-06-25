@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+:root {
+  /* colors lightmode */
+  --greenolive: #546a5e;
+  --whiteblaster: #e0e0d4;
+  --offwhite: #ccc5b2;
+  --lightgreen: #9b9589;
+  --onyxgray: #414141;
+
+  /* colors darkmode */
+  --d-white: #e7e7e7;
+  --d-dark: #272727;
+  --d-green: #394f43;
+
+  /* fonts */
+  line-height: 1.5;
+  font-weight: 400;
+  --primaryFnt: "Poppins", sans-serif;
+  --secondaryFnt: "DM Sans", sans-serif;
+  --tertiaryFnt: "Manrope", sans-serif;
+}
+
+/* styling start */
+.On-sale {
+  padding: 30px 0 80px 0;
+  width: 100%;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  text-align: center;
+  /* padding: 0px 49px 0 49px; */
+}
+.title p {
+  margin: 30px 40px;
+  /* font-size: small; */
+}
+.sale-prods {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  .title h1 {
+    color: var(--whiteblaster);
+  }
+}

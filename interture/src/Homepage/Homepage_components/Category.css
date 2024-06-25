@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* mobile-mode */
+.Category {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.Category div {
+  width: 80%;
+  height: 8rem;
+  margin: 5px;
+  /* margin: 5px; */
+  background-color: rgba(58, 58, 58, 0.371);
+  border-radius: 10px;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s;
+}
+
+.Category div:hover {
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.542);
+}
+
+.Category div p {
+  margin: 20px;
+  text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.542);
+  font-weight: bold;
+}
+
+.living-room {
+  background: url(./assets/living_room.jpg);
+}
+
+.dining-room {
+  background: url(./assets/dining_room.jpg);
+}
+
+.bed-room {
+  background: url(./assets/bed_room.jpg);
+}
+
+/* desktop-mode */
+@media (min-width: 768px) {
+  .Category {
+    flex-direction: row;
+  }
+  .Category div {
+    width: 30%;
+    height: 12rem;
+  }
+}

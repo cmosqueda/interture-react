@@ -1,0 +1,64 @@
+:root {
+  /*Fonts*/
+  --primaryFnt: "Poppins", sans-serif;
+  --secondaryFnt: "DM Sans", sans-serif;
+  --tertiaryFnt: "Manrope", sans-serif;
+
+  /*Colors - dari ninyo e set ang color scheme ninyo para convenient*/
+  --greenolive: #546a5e;
+  --whiteblaster: #e0e0d4;
+  --offwhite: #ccc5b2;
+  --lightgreen: #9b9589;
+  --onyxgray: #414141;
+
+  /* colors darkmode */
+  --d-white: #e7e7e7;
+  --d-dark: #272727;
+  --d-green: #394f43;
+}
+.history_box {
+  background-color: var(--offwhite);
+  margin-bottom: 20px;
+  border-radius: 20px;
+  display: flex;
+  width: 100%;
+  padding: 20px 3%;
+}
+.box-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.purchHis-left {
+  background-color: var(--lightgreen);
+  border-radius: 20px;
+  width: 8em;
+  height: 8em;
+  flex-shrink: 0;
+  margin: 5px;
+}
+.purchHis-right {
+  margin-left: 15px;
+}
+.purchHis-right h1 {
+  font-family: var(--secondaryFnt);
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.purchHis-right p {
+  font-family: var(--tertiaryFnt);
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media (prefers-color-scheme: dark) {
+  .history_box {
+    background-color: var(--onyxgray);
+  }
+  .purchHis-left {
+    background-color: var(--d-dark);
+  }
+}

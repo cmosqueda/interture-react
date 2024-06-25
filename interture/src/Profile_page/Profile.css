@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Rubik:wght@300..900&display=swap");
+
+:root {
+  /*Fonts*/
+  --poppins: "Poppins", sans-serif;
+  --dmsans: "DM Sans", sans-serif;
+  --manrope: "Manrope", sans-serif;
+
+  /*Colors - dari ninyo e set ang color scheme ninyo para convenient*/
+  --greenolive: #546a5e;
+  --whiteblaster: #e0e0d4;
+  --offwhite: #ccc5b2;
+  --lightgreen: #9b9589;
+  --onyxgray: #414141;
+}
+.history-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.purch_history {
+  margin: 35px;
+}
+.purch_history > h1 {
+  font-family: var(--dmsans);
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+.line {
+  background-color: rgba(92, 92, 92, 0.5);
+  width: 100%;
+  height: 1.5px;
+  margin-bottom: 20px;
+}

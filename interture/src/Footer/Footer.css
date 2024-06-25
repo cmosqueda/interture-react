@@ -1,0 +1,123 @@
+:root {
+  /*Fonts*/
+  --primaryFnt: "Poppins", sans-serif;
+  --secondaryFnt: "DM Sans", sans-serif;
+  --tertiaryFnt: "Manrope", sans-serif;
+
+  /*Colors*/
+  --green_olive: #546a5e;
+  --white: #e0e0d4;
+  --offwhite: #ccc5b2;
+  --lightbrown: #9b9589;
+  --darkbrown: #414141;
+}
+.footer {
+  background-color: var(--darkbrown);
+  padding: 20px;
+}
+.logoNslogan {
+  color: var(--white);
+  text-align: center;
+  font-family: var(--primaryFnt);
+  line-height: 1.2;
+}
+.logoNslogan h1 {
+  font-size: 30px;
+}
+.logoNslogan span {
+  color: var(--lightbrown);
+}
+.logoNslogan p {
+  font-family: var(--secondaryFnt);
+}
+.footer-maintxt {
+  font-family: var(--primaryFnt);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.footer-txt {
+  margin: 20px 15px;
+}
+.footer-txt h2 {
+  font-family: var(--secondaryFnt);
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.footer-txt ul {
+  list-style: none;
+}
+.footer-txt li {
+  display: flex;
+  align-items: center;
+}
+.footer-txt box-icon {
+  flex-direction: row;
+  fill: var(--white);
+  width: 18px;
+  margin-right: 2.5px;
+}
+.footer-txt a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 12px;
+  line-height: 1.8;
+}
+.footer-txt a:hover {
+  color: var(--lightbrown);
+  transition: ease 0.2s;
+}
+.line {
+  background-color: var(--white);
+  width: 100%;
+  height: 1px;
+}
+.below-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  color: var(--white);
+  fill: var(--white);
+}
+.media-icons box-icon {
+  width: 25px;
+  height: 25px;
+  padding: 2px;
+  border-style: solid;
+  border-color: var(--white);
+  border-radius: 50%;
+  border-width: 1px;
+  margin: 0px 5px;
+}
+.media-icons box-icon:hover {
+  fill: var(--lightbrown);
+  border-color: var(--lightbrown);
+  transition: ease 0.2s;
+}
+.all-rights {
+  margin-top: 10px;
+  font-family: var(--primaryFnt);
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 25px;
+  }
+  .above-footer {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-maintxt {
+    margin-right: 0;
+  }
+  .footer-txt {
+    margin: 0px 30px 20px 30px;
+  }
+  .below-footer {
+    margin: 20px 0px 0px 0px;
+  }
+}

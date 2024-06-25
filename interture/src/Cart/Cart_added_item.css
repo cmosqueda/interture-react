@@ -1,0 +1,82 @@
+:root {
+  /* colors lightmode */
+  --greenolive: #546a5e;
+  --whiteblaster: #e0e0d4;
+  --offwhite: #ccc5b2;
+  --lightgreen: #9b9589;
+  --onyxgray: #414141;
+
+  /* colors darkmode */
+  --d-white: #e7e7e7;
+  --d-dark: #272727;
+  --d-green: #394f43;
+}
+
+/* cart product component */
+.Added-product {
+  display: flex;
+  flex-direction: row;
+  /* width: 100%; */
+  height: 100px;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  font-size: small;
+  font-weight: bold;
+  margin: 8px;
+  background-color: var(--whiteblaster);
+  border-radius: 10px;
+}
+
+.image-name-rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.product-image {
+  /* background-color: var(--lightgreen); */
+  padding: 2%;
+  /* border-radius: 5px; */
+  /* width: 90px; */
+  /* height: 90px; */
+}
+
+.name-and-rating {
+  margin: 0 10px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-ave-rating {
+  font-size: xx-small;
+  width: 60px;
+}
+
+.remove-button {
+  font-size: medium;
+  background-color: transparent;
+  color: var(--onyxgray);
+}
+
+.quantity-selection span {
+  margin: 0 5px;
+}
+
+.quantity-selection button {
+  background-color: transparent;
+  color: var(--onyxgray);
+}
+
+@media (prefers-color-scheme: dark) {
+  .Added-product {
+    background-color: var(--onyxgray);
+  }
+  .remove-button,
+  .quantity-selection button {
+    color: var(--d-white);
+  }
+}

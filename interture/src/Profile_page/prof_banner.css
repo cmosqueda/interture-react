@@ -1,0 +1,45 @@
+:root {
+  /*Fonts*/
+  --primaryFnt: "Poppins", sans-serif;
+  --secondaryFnt: "DM Sans", sans-serif;
+  --tertiaryFnt: "Manrope", sans-serif;
+
+  /*Colors - dari ninyo e set ang color scheme ninyo para convenient*/
+  --greenolive: #546a5e;
+  --whiteblaster: #e0e0d4;
+  --offwhite: #ccc5b2;
+  --lightgreen: #9b9589;
+  --onyxgray: #414141;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.banner-wrapper {
+  background-color: var(--onyxgray);
+  font-family: var(--primaryFnt);
+  color: var(--whiteblaster);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 4%;
+}
+.banner-left img {
+  border-radius: 100%;
+  width: 90px;
+  margin-right: 30px;
+}
+.banner-right h1 {
+  font-size: 35px;
+}
+.banner-right p {
+  font-family: var(--secondaryFnt);
+}
+
+@media screen and (min-width: 768px) {
+  .banner-wrapper {
+    /* align-items: normal; */
+    justify-content: normal;
+  }
+}

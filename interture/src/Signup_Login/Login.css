@@ -1,0 +1,130 @@
+:root {
+  /* colors lightmode */
+  --greenolive: #546a5e;
+  --whiteblaster: #e0e0d4;
+  --offwhite: #ccc5b2;
+  --lightgreen: #9b9589;
+  --onyxgray: #414141;
+
+  /* colors darkmode */
+  --d-white: #e7e7e7;
+  --d-dark: #272727;
+  --d-green: #394f43;
+}
+
+.login-container {
+  margin: 5% auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form-container {
+  margin: 10%;
+}
+
+.login-text-container {
+  text-align: start;
+}
+
+.login-text-container p {
+  margin: 10px;
+  font-size: small;
+}
+
+.login-card {
+  margin: 10%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: var(--offwhite);
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.315);
+}
+
+.form-group-login {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /*kani ang nadugang*/
+}
+
+.form-group-login input {
+  font-size: small;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
+  width: 100%;
+}
+
+.login-image {
+  display: none;
+}
+
+.form-group-login button {
+  width: 45%;
+}
+
+.signup-option {
+  text-align: center;
+  font-size: small;
+  margin: 20px;
+}
+
+.signup-text {
+  font-weight: bold;
+  color: var(--onyxgray);
+}
+
+.signup-text:hover {
+  color: var(--d-white);
+}
+
+@media (min-width: 768px) {
+  .login-form-container {
+    margin: 5%;
+  }
+  .login-card {
+    flex-direction: row-reverse;
+    margin: 0 4%;
+    width: 60%;
+    /* height: 70%; */
+    justify-content: space-between;
+  }
+  .form-group-login {
+    flex-direction: nowrap;
+  }
+  .form-group-login input {
+    padding: 8px;
+  }
+  .login-image-container {
+    width: 40%;
+    height: 40%;
+  }
+  .login-image {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .login-card {
+    background-color: var(--onyxgray);
+  }
+  .form-group-login input {
+    background-color: var(--d-dark);
+    /* color: black; */
+  }
+  .login-button {
+    background-color: var(--lightgreen);
+  }
+  .login-text-container,
+  .signup-option,
+  .signup-text {
+    color: var(--whiteblaster);
+  }
+}

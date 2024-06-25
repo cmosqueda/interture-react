@@ -1,0 +1,131 @@
+:root {
+  /* colors lightmode */
+  --greenolive: #546a5e;
+  --whiteblaster: #e0e0d4;
+  --offwhite: #ccc5b2;
+  --lightgreen: #9b9589;
+  --onyxgray: #414141;
+
+  /* colors darkmode */
+  --d-white: #e7e7e7;
+  --d-dark: #272727;
+  --d-green: #394f43;
+}
+.Catalog {
+  margin: 50px;
+  height: 100%;
+  /* width: 100%; */
+}
+.catalog-tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+.catalog-navigation-desktop {
+  display: none;
+}
+.catalog-navigation-desktop button {
+  background: none;
+  border: none;
+}
+
+.catalog-navigation-mobile {
+  display: block;
+}
+
+.catalog-dropdown-button {
+  background-color: var(--greenolive);
+  font-weight: bold;
+}
+
+.catalog-dropdown-selection {
+  display: flex;
+  /* display: none; */
+  flex-direction: column;
+  right: 40px;
+  position: absolute;
+  align-items: center;
+  margin: 10px;
+  background-color: var(--d-white);
+  width: 100px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.208);
+  z-index: 1;
+}
+
+.catalog-dropdown-selection button {
+  /* margin: 10px; */
+  color: var(--onyxgray);
+  width: 100%;
+  text-align: center;
+  background: none;
+}
+
+/* Products */
+.products-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  overflow: scroll;
+  height: 400px;
+  overflow-x: hidden;
+  width: 100%;
+  column-fill: auto;
+}
+.products-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+.products-wrapper::-webkit-scrollbar-track {
+  background-color: #ededed;
+  border-radius: 10px;
+}
+.products-wrapper::-webkit-scrollbar-thumb {
+  background-color: var(--offwhite);
+  border-radius: 10px;
+}
+.products-wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: var(--lightgreen);
+}
+
+/* gi kuha nako ang product item styles */
+
+/* desktop-mode */
+@media (min-width: 768px) {
+  .catalog-navigation-desktop {
+    display: flex;
+  }
+  .catalog-navigation-desktop button {
+    /* margin: 0 15px; */
+    color: var(--lightgreen);
+  }
+  .catalog-navigation-desktop button:hover {
+    color: var(--onyxgray);
+  }
+  .catalog-navigation-mobile {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .products-wrapper::-webkit-scrollbar-track {
+    background-color: var(--onyxgray);
+    /* border-radius: 10px; */
+  }
+  .products-wrapper::-webkit-scrollbar-thumb {
+    background-color: var(--greenolive);
+    /* border-radius: 10px; */
+  }
+  .products-wrapper::-webkit-scrollbar-thumb:hover {
+    background-color: #647b6e;
+  }
+  .catalog-dropdown-selection {
+    background-color: var(--onyxgray);
+  }
+  .catalog-dropdown-selection button {
+    color: var(--d-white);
+  }
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+:root {
+    /* colors lightmode */
+    --greenolive: #546a5e;
+    --whiteblaster: #e0e0d4;
+    --offwhite: #ccc5b2;
+    --lightgreen: #9b9589;
+    --onyxgray: #414141;
+  
+    /* colors darkmode */
+    --d-white: #e7e7e7;
+    --d-dark: #272727;
+    --d-green: #394f43;
+
+    /* fonts */
+    line-height: 1.5;
+    font-weight: 400;
+    --primaryFnt: "Poppins", sans-serif;
+    --secondaryFnt: "DM Sans", sans-serif;
+    --tertiaryFnt: "Manrope", sans-serif;
+}
+body{
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-height: 320px;
+    min-height: 100vh;
+    font-family: var(--tertiaryFnt);
+    background-color: var(--d-white);
+}
+.h1{
+    font-size: 3.2em;
+    line-height: 1.1;
+    font-family: var(--primaryFnt);
+}
+
+.pop-up-container{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+}
